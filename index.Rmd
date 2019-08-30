@@ -1,5 +1,5 @@
 ---
-title: "Datos de contacto"
+title: "Contacto"
 output: html_document
 ---
 ### Docente:
