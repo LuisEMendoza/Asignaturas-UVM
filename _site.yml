@@ -10,11 +10,6 @@
       href: GitHub-en-RStudio.html
     - text: "Asignaturas" 
       menu:
-        - text: "Probabilidad y Estadística"
-        - text: "Unidad 1"
-          href: Descriptiva.html
-        - text: "Unidad 2"
-          href: Probabilidad.html
         - text: "Optimización I"
         - text: "Unidad 1"
           href: IntroPL.html
@@ -23,6 +18,11 @@
         - text: "Optimización II"
         - text: "Unidad 1"
           href: CPM.html
+        - text: "Probabilidad y Estadística"
+        - text: "Unidad 1"
+          href: Descriptiva.html
+        - text: "Unidad 2"
+          href: Probabilidad.html
   output:
     html_document:
         theme: cosmo
