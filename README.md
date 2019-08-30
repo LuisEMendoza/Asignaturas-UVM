@@ -1,2 +1,2 @@
 # Asignaturas-UVM
-Clases y contenidos de las asignaturas del docente.
+Clases, contenidos y códigos de las asignaturas del docente.
