@@ -1,0 +1,29 @@
+  name: "lemr"
+  output_dir: "docs"
+  navbar:
+    left:
+    - text: "Inicio"
+      href: index.html
+    - text: "¿Cómo utilizar estos apuntes?"
+      href: Ayuda.html
+    - text: "Git y GitHub en RStudio"
+      href: GitHub-en-RStudio.html
+    - text: "Asignaturas" 
+      menu:
+        - text: "Probabilidad y Estadística"
+        - text: "Unidad 1"
+          href: Descriptiva.html
+        - text: "Unidad 2"
+          href: Probabilidad.html
+        - text: "Optimización I"
+        - text: "Unidad 1"
+          href: IntroPL.html
+        - text: "Unidad 2"
+          href: Modelos.html
+        - text: "Optimización II"
+        - text: "Unidad 1"
+          href: CPM.html
+  output:
+    html_document:
+        theme: cosmo
+    
