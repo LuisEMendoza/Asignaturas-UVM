@@ -309,7 +309,7 @@ media <- suma/observaciones
 media
 ```
 
-R tiene la función ya predetrminada:
+R tiene la función ya predeterminada:
 
 ```{r}
 mean(grietas)
