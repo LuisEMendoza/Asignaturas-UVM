@@ -315,6 +315,10 @@ R tiene la función ya predetrminada:
 mean(grietas)
 ```
 
+### Ejercicio
+
+Trabajemos ahora con otro conjunto de valores:
+
 ```{r}
 m <- scan("datasets/004-horno.txt")
 m
