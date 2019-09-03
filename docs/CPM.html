@@ -580,6 +580,86 @@ Z= \frac{T-\mu}{\sigma}
 \]</span></p>
 <pre class="r"><code>pnorm(22, mean = 20, sd=2.357)</code></pre>
 <pre><code>## [1] 0.8019303</code></pre>
+<div id="ejercicio" class="section level3">
+<h3>Ejercicio</h3>
+<p>Se construye una lujosa residencia y la coordinación del arquitecto y los subcontratistas requerirá un esfuerzo importante para cumplir con la fecha de terminación de 44 semanas (aproximadamente 10 meses) solicitada por el propietario. El gerente del proyecto preparó la siguiente tabla de duración de las tareas del proyecto.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Actividad</th>
+<th align="center">Predecesora</th>
+<th align="center">Optimista</th>
+<th align="center">Más probable</th>
+<th align="center">Pesimista</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td align="center">-</td>
+<td align="center">4</td>
+<td align="center">8</td>
+<td align="center">12</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td align="center">A</td>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">8</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td align="center">A</td>
+<td align="center">6</td>
+<td align="center">12</td>
+<td align="center">18</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td align="center">A</td>
+<td align="center">3</td>
+<td align="center">5</td>
+<td align="center">7</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td align="center">C,D</td>
+<td align="center">6</td>
+<td align="center">9</td>
+<td align="center">18</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td align="center">B,C</td>
+<td align="center">5</td>
+<td align="center">8</td>
+<td align="center">17</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td align="center">E,F</td>
+<td align="center">10</td>
+<td align="center">15</td>
+<td align="center">20</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td align="center">F,G</td>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">13</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li>Determine la ruta crítica.</li>
+<li>¿Cuál es el tiempo de terminación del proyecto esperado?</li>
+<li>¿Cuál es la probabilidad de que el proyecto se termine en las 44 semanas solicitadas por el propietario?</li>
+<li>¿Cuál es la probabilidad de que el proyecto de construcción pudiera retrasarse más de tres meses? Utilice 57 semanas para este cálculo.</li>
+<li>¿Qué deberá decirle la compañía constructora al propietario?</li>
+</ol>
+</div>
 </div>
 
 

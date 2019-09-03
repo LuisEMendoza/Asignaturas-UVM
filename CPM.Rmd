@@ -84,3 +84,27 @@ $$
 ```{r}
 pnorm(22, mean = 20, sd=2.357)
 ```
+
+
+### Ejercicio
+Se construye una lujosa residencia y la coordinación del arquitecto y los subcontratistas requerirá un esfuerzo importante para cumplir con la fecha de terminación de 44 semanas (aproximadamente 10 meses) solicitada por el propietario. El gerente del proyecto preparó la siguiente tabla de duración de las tareas del proyecto.
+
+
+Actividad | Predecesora | Optimista | Más probable | Pesimista 
+--- | :---: |  :---: |  :---: |  :---:
+A | - | 4 | 8 | 12
+B | A | 6 | 7 | 8
+C | A | 6 | 12 | 18
+D | A | 3 | 5 | 7
+E | C,D | 6 | 9 | 18
+F | B,C | 5 | 8 | 17
+G | E,F | 10 | 15 | 20
+H | F,G | 5 | 6 | 13
+
+1. Determine la ruta crítica. 
+2. ¿Cuál es el tiempo de terminación del proyecto esperado?
+3. ¿Cuál es la probabilidad de que el proyecto se termine en las 44 semanas solicitadas
+por el propietario?
+4. ¿Cuál es la probabilidad de que el proyecto de construcción pudiera retrasarse más de tres meses? Utilice 57 semanas para este cálculo.
+5. ¿Qué deberá decirle la compañía constructora al propietario?
+ 
