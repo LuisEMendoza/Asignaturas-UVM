@@ -15,15 +15,15 @@ Dividiremos la Estadística en dos ramas por el momento. En primera instancia, e
 La tragedia que sufrió el transbordador espacial Challenger y sus astronautas en 1986 condujo a varios estudios para investigar las razones de la falla de la misión. La atención se enfocó de inmediato en el comportamiento de los sellos anulares del motor del cohete. He aquí datos derivados de observaciones en x = temperatura del sello anular (°F) en cada encendido de prueba o lanzamiento del motor del cohete del transbordador (Presidential Commission on the Space Shuttle Challenger Accident, Vol. 1, 1986: 129-131). Los datos se presentan en una sola columna para dejar en claro que se refieren a datos univariables. Cabe mencionar que los datos se encuentran en la carpeta _datasets_ del repositorio de la asignatura en [GitHub](https://github.com/LuisEMendoza/RMarkdown-test/tree/master/datasets).
 
 ```{r echo=FALSE}
-temp <- read.table("datasets/001-challenger.txt", header = TRUE)
-knitr::kable(temp[1:36, ], caption = 'Temperaturas (°F)')
+temp <- scan("datasets/001-challenger.txt")
+temp
 ```
 
 
 A simple vista, los datos así mostrados no dicen gran cosa. Para ello es deseable organizarlos de manera que muestren algún comportamiento en particular. Una de las maneras más burdas es el __diagrama de tallo y hojas__, el cual se muestra a continuación:
 
 ```{r echo=FALSE}
-stem(temp[1:36,])
+stem(temp)
 ```
 
 La explicación del diagrama es sencilla: las cifras que representan las decenas se colocan como tallos, mientras que las cifras que son unidades se vuelven hojas. Este diagrama nos permite saber de manera rápida cuáles son las temperaturas más comunes o frecuentes en nuestro conjunto de datos. También puede decirse que es un __histograma__ muy rudimentario.
@@ -31,13 +31,13 @@ La explicación del diagrama es sencilla: las cifras que representan las decenas
 A continuación se muestra un histograma:
 
 ```{r echo=FALSE}
-hist(temp[1:36,])
+hist(temp)
 ```
 
 Y para terminar, una gráfica que posteriormente se verá cómo interpretarse y construirse es la __gráfica de caja__, la cual se muestra a continuación:
 
 ```{r echo=FALSE}
-boxplot(temp[1:36,])
+boxplot(temp)
 ```
 
 Lo anterior, así como la tabla donde se muestran los datos, fue realizado con un _software_ estadístico: __R__.
@@ -64,14 +64,14 @@ Una gráfica de tallos y hojas da información sobre los siguientes aspectos de 
 A modo de práctica, tomemos los siguientes valores que representan el flujo de agua en regaderas de Australia en litros por minuto, para _n = 130_. Se muestra también el código en _R_ para mostrar y calcular el diagrama:
 
 ```{r}
-flujo <- read.table("datasets/002-flujo.txt", header = FALSE)
-head(flujo)
+flujo <- scan("datasets/002-flujo.txt")
+flujo
 ```
 
 Construyamos nuestro diagrama:
 
 ```{r}
-stem(flujo[1:130,])
+stem(flujo)
 ```
 
 
@@ -84,7 +84,7 @@ stem(flujo[1:130,])
 Es un resumen atractivo de datos numéricos cuando el conjunto es razonablemente pequeño o existen pocos valores de datos distintos. Cada observación está representada por un punto sobre la ubicación correspondiente en una escala de medición horizontal. Cuando un valor ocurre más de una vez, existe un punto por cada ocurrencia y estos puntos se apilan verticalmente. Como con la gráfica de tallos y hojas, una gráfica de puntos da información sobre la localización, dispersión, extremos y brechas. Usemos como ejemplo el conjunto de las temperaturas del _Challenger_.
 
 ```{r}
-stripchart(temp[1:36,], method = 'stack')
+stripchart(temp, method = 'stack')
 ```
 
 ### Tablas de frecuencia

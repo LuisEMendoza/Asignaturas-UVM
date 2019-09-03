@@ -1,4 +1,3 @@
-Temperatura(°F)
 84
 49
 61
