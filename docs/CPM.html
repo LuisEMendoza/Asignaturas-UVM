@@ -664,6 +664,109 @@ Z= \frac{T-\mu}{\sigma}
 </ol>
 </div>
 </div>
+<div id="consideracion-de-intercambios-entre-tiempo-y-dinero" class="section level2">
+<h2>Consideración de intercambios entre tiempo y dinero</h2>
+<p>Los desarrolladores del método CPM permitieron agregar recursos a ciertas actividades, con el objetivo de disminuir el tiempo de ejecución de las mismas. Los recursos pueden ser más trabajadores, tiempo extra, maquinaria adicional, etcétera. Estos recursos, al ser agregados obviamente implican mayores costos, por lo que el encargado del proyecto debe sopesar si es más conveniente inyectar dinero a cambio de ahorro de tiempo.</p>
+<p>La siguiente tabla define un proyecto de mantenimiento de dos máquinas que consta de cinco actividades. Como la gerencia ha tenido una experiencia significativa con proyectos similares, los tiempos de las actividades de mantenimiento se consideran conocidos; por consiguiente, para cada actividad se da una estimación de tiempo única. El procedimiento de calcular la ruta crítica para la red del proyecto de mantenimiento es el mismo que se utilizó para determinar la ruta crítica en las redes anteriores.</p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="9%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Actividad</th>
+<th align="left">Descripción</th>
+<th align="center">Predecesora</th>
+<th align="center">Tiempo normal</th>
+<th align="center">Tiempo abatido</th>
+<th align="center">Costo normal</th>
+<th align="center">Costo abatido</th>
+<th align="center">Reducción máxima de tiempo</th>
+<th align="center">Costo de compresión por día</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">A</td>
+<td align="left">Reparar la máquina I</td>
+<td align="center">-</td>
+<td align="center">7</td>
+<td align="center">4</td>
+<td align="center">500</td>
+<td align="center">800</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">B</td>
+<td align="left">Ajustar la máquina I</td>
+<td align="center">A</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">200</td>
+<td align="center">350</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">C</td>
+<td align="left">Reparar la máquina II</td>
+<td align="center">-</td>
+<td align="center">6</td>
+<td align="center">4</td>
+<td align="center">500</td>
+<td align="center">900</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">D</td>
+<td align="left">Ajustar la máquina II</td>
+<td align="center">C</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">200</td>
+<td align="center">500</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">E</td>
+<td align="left">Probar el sistema</td>
+<td align="center">B,D</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">300</td>
+<td align="center">550</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>La reducción máxima posible se calcula con la siguiente expresión:</p>
+<p><span class="math display">\[
+M_i=\tau_i-\tau&#39;_i
+\]</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(M_i\)</span> = reducción máxima posible del tiempo de la actividad <span class="math inline">\(i\)</span> debido a la compresión.</li>
+<li><span class="math inline">\(\tau_i\)</span> = tiempo esperado de la actividad <span class="math inline">\(i\)</span>.</li>
+<li><span class="math inline">\(\tau&#39;_i\)</span> = tiempo de la actividad <span class="math inline">\(i\)</span> con abatimiento máximo.</li>
+</ul>
+<p>El costo de compresión por unidad de tiempo se obtiene mediante:</p>
+<p><span class="math display">\[
+K_i=\frac{C&#39;_i-C_i}{M_i}
+\]</span></p>
+<p>Donde: - <span class="math inline">\(C_i\)</span> = es el costo de la actividad <span class="math inline">\(i\)</span> en el tiempo normal. - <span class="math inline">\(C&#39;_i\)</span> = es el costo de la actividad <span class="math inline">\(i\)</span> con compresión máxima.</p>
+</div>
 
 
 
