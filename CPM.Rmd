@@ -108,3 +108,38 @@ por el propietario?
 4. ¿Cuál es la probabilidad de que el proyecto de construcción pudiera retrasarse más de tres meses? Utilice 57 semanas para este cálculo.
 5. ¿Qué deberá decirle la compañía constructora al propietario?
  
+ 
+## Consideración de intercambios entre tiempo y dinero
+Los desarrolladores del método CPM permitieron agregar recursos a ciertas actividades, con el objetivo de disminuir el tiempo de ejecución de las mismas. Los recursos pueden ser más trabajadores, tiempo extra, maquinaria adicional, etcétera. Estos recursos, al ser agregados obviamente implican mayores costos, por lo que el encargado del proyecto debe sopesar si es más conveniente inyectar dinero a cambio de ahorro de tiempo.
+
+La siguiente tabla define un proyecto de mantenimiento de dos máquinas que consta de cinco actividades. Como la gerencia ha tenido una experiencia significativa con proyectos similares, los tiempos de las actividades de mantenimiento se consideran conocidos; por consiguiente, para cada actividad se da una estimación de tiempo única. El procedimiento de calcular la ruta crítica para la red del proyecto de mantenimiento es el mismo que se utilizó para determinar la ruta crítica en las redes anteriores.
+
+Actividad|Descripción|Predecesora|Tiempo normal|Tiempo abatido|Costo normal|Costo abatido|Reducción máxima de tiempo|Costo de compresión por día
+:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+A|Reparar la máquina I|-|7|4|500|800| |
+B|Ajustar la máquina I|A|3|2|200|350| | 
+C|Reparar la máquina II|-|6|4|500|900| |
+D|Ajustar la máquina II|C|3|1|200|500| |
+E|Probar el sistema|B,D|2|1|300|550| |
+
+La reducción máxima posible se calcula con la siguiente expresión:
+
+$$
+M_i=\tau_i-\tau'_i
+$$
+
+Donde: 
+
+- $M_i$ = reducción máxima posible del tiempo de la actividad $i$ debido a la compresión.
+- $\tau_i$ = tiempo esperado de la actividad $i$.
+- $\tau'_i$ = tiempo de la actividad $i$ con abatimiento máximo.
+
+El costo de compresión por unidad de tiempo se obtiene mediante:
+
+$$
+K_i=\frac{C'_i-C_i}{M_i}
+$$
+
+Donde:
+- $C_i$ = es el costo de la actividad $i$ en el tiempo normal.
+- $C'_i$ = es el costo de la actividad $i$ con compresión máxima.
