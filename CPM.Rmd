@@ -141,5 +141,6 @@ K_i=\frac{C'_i-C_i}{M_i}
 $$
 
 Donde:
+
 - $C_i$ = es el costo de la actividad $i$ en el tiempo normal.
 - $C'_i$ = es el costo de la actividad $i$ con compresión máxima.
