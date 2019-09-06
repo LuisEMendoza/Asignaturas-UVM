@@ -138,7 +138,7 @@ El costo de compresión por unidad de tiempo se obtiene mediante:
 
 $$
 K_i=\frac{C'_i-C_i}{M_i}
-$$
+  $$
 
 Donde:
 
